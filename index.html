@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joshua Han | Finance at Rutgers</title>
+<meta name="description" content="Joshua Han is a finance major at Rutgers University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f2f4f0;
+    --ink: #17202a;
+    --muted: #5d6b73;
+    --rule: #b9c2c0;
+    --scarlet: #cc0033;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.05rem/1.65 var(--sans);
+  }
+  a { color: inherit; text-decoration-color: var(--scarlet); text-underline-offset: 3px; }
+  a:hover { color: var(--scarlet); }
+  a:focus-visible { outline: 2px solid var(--scarlet); outline-offset: 3px; }
+  main { max-width: 46rem; margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  header { padding: clamp(4rem, 14vw, 9rem) 0 3rem; }
+  h1 {
+    font: 600 clamp(3.2rem, 13vw, 7rem)/0.95 var(--serif);
+    letter-spacing: -0.03em;
+    margin: 0 0 1.5rem;
+  }
+  .tagline { font: 400 1.5rem/1.35 var(--serif); color: var(--muted); max-width: 28rem; margin: 0; }
+  nav { display: flex; gap: 1.5rem; margin-top: 2.5rem; font-weight: 500; }
+
+  section { padding: 2.5rem 0; border-top: 2px solid var(--ink); }
+  h2 { font: 600 1.6rem/1.2 var(--serif); margin: 0 0 1.25rem; }
+  p { margin: 0 0 1rem; max-width: 38rem; }
+
+  /* Ledger rows: label ..... value, like a line on a financial statement */
+  .ledger { list-style: none; margin: 0; padding: 0; }
+  .ledger li { display: flex; align-items: baseline; gap: 0.6rem; padding: 0.55rem 0; }
+  .ledger .label { font-weight: 500; }
+  .ledger .dots { flex: 1; border-bottom: 2px dotted var(--rule); transform: translateY(-0.3em); min-width: 1rem; }
+  .ledger .value { text-align: right; color: var(--muted); }
+  .ledger .value.now { color: var(--scarlet); font-weight: 500; }
+
+  footer { padding-top: 2rem; border-top: 2px solid var(--ink); color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 34rem) {
+    .ledger li { flex-wrap: wrap; }
+    .ledger .dots { display: none; }
+    .ledger .value { width: 100%; text-align: left; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Joshua Han</h1>
+    <p class="tagline">Finance major at Rutgers University, interested in how money and good decisions meet.</p>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#statement">Statement</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <!-- EDIT: replace with your own words -->
+    <p>I'm a finance student at Rutgers University–New Brunswick. I'm drawn to consulting and wealth management, and I like work where careful analysis leads to a clear recommendation.</p>
+    <p>This site collects what I've studied, what I've done, and where to reach me.</p>
+  </section>
+
+  <section id="statement">
+    <h2>Statement</h2>
+    <!-- EDIT: add, remove or change rows. Add class "now" to the value for anything current. -->
+    <ul class="ledger">
+      <li><span class="label">Education</span><span class="dots" aria-hidden="true"></span><span class="value now">Rutgers University–New Brunswick, B.S. Finance</span></li>
+      <li><span class="label">Career interests</span><span class="dots" aria-hidden="true"></span><span class="value">Consulting, wealth management</span></li>
+      <li><span class="label">Experience</span><span class="dots" aria-hidden="true"></span><span class="value">Add a role, club or internship here</span></li>
+      <li><span class="label">Projects</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="https://github.com/YOUR-USERNAME">Add a project and link it</a></span></li>
+      <li><span class="label">Skills</span><span class="dots" aria-hidden="true"></span><span class="value">Excel, financial modeling, valuation</span></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- EDIT: swap in your real email and profile links -->
+    <ul class="ledger">
+      <li><span class="label">Email</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="mailto:you@example.com">you@example.com</a></span></li>
+      <li><span class="label">LinkedIn</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="https://www.linkedin.com/in/YOUR-HANDLE">linkedin.com/in/YOUR-HANDLE</a></span></li>
+      <li><span class="label">GitHub</span><span class="dots"
