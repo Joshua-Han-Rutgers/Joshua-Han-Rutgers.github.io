@@ -61,6 +61,13 @@
   .ledger .dots { flex: 1; border-bottom: 2px dotted var(--rule); transform: translateY(-0.3em); min-width: 1rem; }
   .ledger .value { text-align: right; color: var(--muted); }
   .ledger .value.now { color: var(--scarlet); font-weight: 500; }
+  .ledger li.note {
+    display: block;
+    padding: 0 0 0.9rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 34rem;
+  }
 
   footer { padding-top: 2rem; border-top: 2px solid var(--ink); color: var(--muted); font-size: 0.9rem; }
 
@@ -94,21 +101,21 @@
 
   <section id="statement">
     <h2>Statement</h2>
-    <!-- EDIT: add, remove or change rows. Add class "now" to the value for anything current. -->
     <ul class="ledger">
       <li><span class="label">Education</span><span class="dots" aria-hidden="true"></span><span class="value now">Rutgers University–New Brunswick, B.S. Finance (Expected 2029)</span></li>
       <li><span class="label">Career interests</span><span class="dots" aria-hidden="true"></span><span class="value">Consulting, wealth management</span></li>
       <li><span class="label">Experience</span><span class="dots" aria-hidden="true"></span><span class="value">Case Competition, MBS Externship</span></li>
       <li><span class="label">Projects</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="Aegis.pdf" target="_blank" rel="noopener">Aegis (PDF)</a></span></li>
+      <!-- EDIT: replace this with your own description of Aegis -->
+      <li class="note">I worked with a team of four to develop a market entry strategy for a simulated medical business, projecting market share growth from 56% to 86% and a 29% net margin. I also delivered the competitive positioning strategy, using SWOT and market analysis in a competitive case setting.</li>
       <li><span class="label">Skills</span><span class="dots" aria-hidden="true"></span><span class="value">Excel, financial modeling, valuation</span></li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <!-- EDIT: swap in your real email and profile links -->
     <ul class="ledger">
-      <li><span class="label">Email</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="jh2319@scarletmail.rutgers.edu">jh2319@scarletmail.rutgers.edu</a></span></li>
+      <li><span class="label">Email</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="mailto:jh2319@scarletmail.rutgers.edu">jh2319@scarletmail.rutgers.edu</a></span></li>
       <li><span class="label">LinkedIn</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="https://www.linkedin.com/in/joshua-han-885b58380/">My Linkedin/</a></span></li>
       <li><span class="label">GitHub</span><span class="dots" aria-hidden="true"></span><span class="value"><a href="https://github.com/Joshua-Han-Rutgers">github.com/Joshua-Han-Rutgers</a></span></li>
     </ul>
